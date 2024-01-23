@@ -1,0 +1,30 @@
+config = {
+    "epoches": 40,
+    "batch_size": 64,
+    "lr": 0.1,
+    "random_state": 2024,
+    "model_path": "../ckpt/",
+    "train_csv": "../data/train.csv",
+    "test_csv": "../data/test.csv",
+    "train_set": "../info/train_set.csv",
+    "dev_set": "../info/dev_set.csv",
+    "test_set": "../info/test_set.csv",
+    "label_encode_columns": [
+        "Tenure",
+        "Gender",
+        "Geography",
+        "IsActiveMember",
+        "HasCrCard",
+        "NumOfProducts",
+    ],
+    "min2max_columns": [
+        "CreditScore",
+        "Age",
+        "EstimatedSalary",
+    ],
+    "unuse_columns": [
+        "id",
+        "CustomerId",
+        "Surname",
+    ],
+}
